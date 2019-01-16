@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv="CONTENT-TYPE" content="TEXT/HTML; CHARSET=UTF-8">
+<LINK href="style.css" rel="stylesheet" type="text/css">
+<TITLE>7z Format</TITLE>
+<META name="keywords" content="7z, lzma, 7-zip, archiver, free, compression, zip, 
+best, compress, solid, high, ratio, unzip, far, win32, 7zip, long, file, names">
+</HEAD>
+<BODY>
+<TABLE cellspacing=10 cellpadding=10 border=0 width="100%"><TR>
+<TD class="MenuColumn" valign="top">
+<TABLE cellpadding=2 cellspacing=0 border=0 width="100%">
+<TR><TD><IMG width=110 height=63 src="7ziplogo.png" alt="7-Zip" border=0></TD></TR>
+<TR><TD><HR></TD></TR></TABLE>
+<TABLE cellpadding="2" cellspacing="0" border="0">
+<TR><TD><A href="index.html" class="MenuLink">Home</A></TD></TR>
+<TR><TD><SPAN class="MenuCurrent">7z Format</SPAN></TD></TR>
+<TR><TD><A href="sdk.html" class="MenuLink">LZMA SDK</A></TD></TR>
+<TR><TD><A href="download.html" class="MenuLink">Download</A></TD></TR>
+<TR><TD><A href="faq.html" class="MenuLink">FAQ</A></TD></TR>
+<TR><TD><A href="support.html" class="MenuLink">Support</A></TD></TR>
+<TR><TD><A href="links.html" class="MenuLink">Links</A></TD></TR>
+</TABLE>
+<TABLE cellpadding=2 cellspacing=0 border=0 width="100%">
+<TR><TD><HR></TD></TR>
+</TABLE>
+
+<P>
+<B>English</B><BR>
+<A href="http://sparanoid.com/lab/7z/">Chinese Simpl.</A><BR>
+<A href="http://www.developershome.com/7-zip/">Chinese Trad.</A><BR>
+<A href="http://7zip-eo.rnbastos.com/">Esperanto</A><BR>
+<A href="http://www.spiroo.be/7zip/">French</A><BR>
+<A href="http://www.7-zip.de/">German</A><BR>
+<A href="https://sevenzip.osdn.jp/">Japanese</A><BR>
+<A href="http://7zip.rnbastos.com/">Portuguese Brazil</A><BR>
+<A href="http://7zip-es.updatestar.com/">Spanish</A><BR>
+<A href="http://7zip-thai.inetbridge.net/">Thai</A><BR>
+<A href="http://7zip-vi.updatestar.com/">Vietnamese</A><BR>
+</P>
+
+</TD>
+<TD valign="top">
+
+<H1>7z Format</H1>
+
+<P><B>7z</B> is the new archive format, providing high compression ratio.</P>
+
+<P>The main features of <B>7z</B> format:</P>
+<UL>
+  <LI>Open architecture
+  <LI>High compression ratio
+  <LI>Strong AES-256 encryption
+  <LI>Ability of using any compression, conversion or encryption method
+  <LI>Supporting files with sizes up to 16000000000 GB
+  <LI>Unicode file names
+  <LI>Solid compressing
+  <LI>Archive headers compressing
+</UL>
+
+<P><B>7z</B> has open architecture, so it can support any new compression methods.
+Now the following methods are integrated to <B>7z</B>:</P>
+
+<TABLE cellspacing ="2" cellpadding ="4">
+  <TR> <TH class="Title" width="60">Method</TH> <TH class="Title">Description</TH></TR>
+  <TR> <TD class="Item">LZMA</TD> <TD class="Item">Improved and optimized version of LZ77 algorithm</TD></TR>
+  <TR> <TD class="Item">LZMA2</TD> <TD class="Item">Improved version of LZMA</TD></TR>
+  <TR> <TD class="Item">PPMD</TD> <TD class="Item">Dmitry Shkarin's PPMdH with small changes</TD></TR>
+  <TR> <TD class="Item">BCJ</TD> <TD class="Item">Converter for 32-bit x86 executables</TD></TR>
+  <TR> <TD class="Item">BCJ2</TD> <TD class="Item">Converter for 32-bit x86 executables</TD></TR>
+  <TR> <TD class="Item">BZip2</TD> <TD class="Item">Standard BWT algorithm</TD></TR>
+  <TR> <TD class="Item">Deflate</TD> <TD class="Item">Standard LZ77-based algorithm</TD></TR>
+</TABLE>
+
+<P><B>LZMA</B> is default and general compression method of <B>7z</B> format. The main features of <B>LZMA</B> method:</P>
+<UL>
+  <LI>High compression ratio
+  <LI>Variable dictionary size (up to 4 GB)
+  <LI>Compressing speed: about 1 MB/s on 2 GHz CPU
+  <LI>Decompressing speed: about 10-20 MB/s on 2 GHz CPU
+  <LI>Small memory requirements for decompressing (depend from dictionary size)
+  <LI>Small code size for decompressing: about 5 KB
+  <LI>Supporting multi-threading and P4's hyper-threading
+</UL>
+
+<P><B>LZMA</B> compression algorithm is very suitable for embedded applications.
+<B>LZMA</B> is released under the terms of the GNU LGPL. <B>LZMA</B> is also 
+available under a proprietary license for those who can not use the GNU LGPL in 
+their code. If you want to use <B>LZMA</B> code, you can ask consultations, 
+custom code programming and required developer licenses 
+from page for support:
+<A href="support.html">Send message to LZMA developer</A>.
+Check also information about <A href ="sdk.html">LZMA SDK</A>.</P>
+
+<P>7-Zip also supports encryption with AES-256 algorithm. 
+This algorithm uses cipher key with length of 256 bits. To create that key 7-Zip 
+uses derivation function based on SHA-256 hash algorithm.
+A key derivation function produces a derived key from text password defined by user.
+For increasing the cost of exhaustive search for passwords 7-Zip uses big number 
+of iterations to produce cipher key from text password.</P>
+
+<P><B>7z</B> is a part of <A href="index.html">7-Zip</A> program distributed under the GNU LGPL. 
+You can download <B>7-Zip</B> sources and binaries from <A href ="download.html">Download Page</A>.</P>
+
+<p>Applications that support <B>7z</B> archives: WinRAR, PowerArchiver, TUGZip, IZArc.</p>
+
+<p>Links:</p>
+<ul>
+<li><A href="http://en.wikipedia.org/wiki/7z">7z at Wikipedia</A></li>
+</ul>
+
+
+<HR>
+<P><SMALL>Copyright (C) 2018 Igor Pavlov. The site is hosted at <A href="https://www.digitalocean.com/?refcode=cab893b82fa8">Digital Ocean</A> </SMALL></P>
+</TD></TR></TABLE>
+
+</BODY></HTML>
